@@ -274,7 +274,7 @@
 <style>
   html, body { margin: 0; padding: 0; background: #FAF9F5; }
   * { box-sizing: border-box; }
-  a { color: #121212; text-decoration: none; }
+  a { color: #003531; text-decoration: none; }
   a:hover { color: #B99824; }
   button { font-family: inherit; }
   input, textarea, select { font-family: inherit; }
@@ -301,7 +301,7 @@
   .mq-wrap:hover .mq-track { animation-play-state: paused; }
   .pa-card { position: relative; isolation: isolate; overflow: hidden; transition: color .5s ease; }
   .pa-card::before { content: ''; position: absolute; inset: 0; background-image: var(--pa-img); background-size: cover; background-position: center; opacity: 0; transform: scale(1.08); transition: opacity .7s cubic-bezier(.16,1,.3,1), transform 1.4s cubic-bezier(.16,1,.3,1); z-index: -2; }
-  .pa-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(18,18,18,.52), rgba(18,18,18,.86)); opacity: 0; transition: opacity .7s cubic-bezier(.16,1,.3,1); z-index: -1; }
+  .pa-card::after { content: ''; position: absolute; inset: 0; background: linear-gradient(180deg, rgba(0,53,49,.52), rgba(0,53,49,.86)); opacity: 0; transition: opacity .7s cubic-bezier(.16,1,.3,1); z-index: -1; }
   .pa-card:hover::before, .pa-card:focus-visible::before { opacity: 1; transform: scale(1); }
   .pa-card:hover::after, .pa-card:focus-visible::after { opacity: 1; }
   .pa-card > div { transition: color .5s ease; }
@@ -309,7 +309,7 @@
   .pa-card:hover .pa-d, .pa-card:focus-visible .pa-d { color: rgba(255,255,255,.8); }
   .pa-card:hover .pa-n, .pa-card:focus-visible .pa-n { color: #D4B457; }
   .hdr { transition: box-shadow .35s ease, background .35s ease; }
-  .hdr.hdr-on { box-shadow: 0 1px 24px rgba(18,18,18,.09); background: rgba(250,249,245,.88); backdrop-filter: saturate(1.2) blur(10px); }
+  .hdr.hdr-on { box-shadow: 0 1px 24px rgba(0,53,49,.09); background: rgba(250,249,245,.88); backdrop-filter: saturate(1.2) blur(10px); }
   [data-mobtoggle], [data-mobpanel] { display: none; }
   [data-site-root] button, [data-site-root] a { transition: background-color .25s ease, color .25s ease, border-color .25s ease, transform .25s ease; }
   [data-site-root] button:hover { transform: translateY(-1px); }
@@ -350,7 +350,7 @@
 </helmet>
 <div data-site-root="" style="font-family:'Helvetica Neue',Helvetica,Arial,sans-serif;color:#161615;background:#FAF9F5;-webkit-font-smoothing:antialiased">
 
-  <div data-utilbar="" style="background:#121212;color:rgba(255,255,255,.78)">
+  <div data-utilbar="" style="background:#003531;color:rgba(255,255,255,.78)">
     <div style="max-width:1440px;margin:0 auto;padding:0 40px;height:42px;display:flex;align-items:center;justify-content:space-between;gap:24px;font-size:12px;letter-spacing:.06em">
       <div style="display:flex;align-items:center;gap:28px">
         <span>+603 3005 8027</span>
@@ -370,16 +370,18 @@
   </div>
 
   <div class="hdr" data-hdr="" style="position:sticky;top:0;z-index:50;background:#FAF9F5;border-bottom:1px solid #E3E2DD">
-    <div style="max-width:1440px;margin:0 auto;position:relative;padding:0 40px;height:76px;display:flex;align-items:center;justify-content:space-between;gap:32px">
+    <div style="max-width:1440px;margin:0 auto;position:relative;padding:0 40px;height:100px;display:flex;align-items:center;justify-content:space-between;gap:32px">
       <button type="button" sc-camel-on-click="{{ nav.home }}" style="background:none;border:0;padding:0;cursor:pointer;display:flex;align-items:center">
-        <img src="assets/images/logo.png" alt="Tan &amp; Khong Chambers" style="height:46px;width:auto;display:block">
+        <img src="assets/images/logo.png" alt="Tan &amp; Khong Chambers" style="height:72px;width:auto;display:block">
       </button>
       <div data-navrow="" style="display:flex;align-items:center;gap:30px">
-        <button type="button" sc-camel-on-click="{{ nav.about }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#161615;border-bottom:1px solid transparent" style-hover="border-bottom:1px solid #B99824;color:#121212">About Us</button>
-        <button type="button" sc-camel-on-click="{{ nav.vision }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#161615;border-bottom:1px solid transparent" style-hover="border-bottom:1px solid #B99824;color:#121212">Our Vision</button>
-        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#161615;border-bottom:1px solid transparent" style-hover="border-bottom:1px solid #B99824;color:#121212">Practice Areas</button>
-        <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#161615;border-bottom:1px solid transparent" style-hover="border-bottom:1px solid #B99824;color:#121212">Our People</button>
-        <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#121212;color:#fff;border:0;padding:11px 20px;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#B99824;color:#121212">Contact Us</button>
+        <button type="button" sc-camel-on-click="{{ nav.about }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#161615;border-bottom:1px solid transparent" style-hover="border-bottom:1px solid #B99824;color:#003531">About Us</button>
+        <button type="button" sc-camel-on-click="{{ nav.vision }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#161615;border-bottom:1px solid transparent" style-hover="border-bottom:1px solid #B99824;color:#003531">Our Vision</button>
+        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#161615;border-bottom:1px solid transparent" style-hover="border-bottom:1px solid #B99824;color:#003531">Practice Areas</button>
+        <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#161615;border-bottom:1px solid transparent" style-hover="border-bottom:1px solid #B99824;color:#003531">Our People</button>
+        <button type="button" sc-camel-on-click="{{ nav.feed }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#161615;border-bottom:1px solid transparent" style-hover="border-bottom:1px solid #B99824;color:#003531">Our Feed</button>
+        <button type="button" sc-camel-on-click="{{ nav.faq }}" style="background:none;border:0;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#161615;border-bottom:1px solid transparent" style-hover="border-bottom:1px solid #B99824;color:#003531">FAQ</button>
+        <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#003531;color:#fff;border:0;padding:11px 20px;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#B99824;color:#003531">Contact Us</button>
       </div>
       <button type="button" data-mobtoggle="" sc-camel-on-click="{{ toggleMenu }}" style="background:none;border:1px solid #C9C7C1;padding:11px 16px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#161615">Menu</button>
       <sc-if value="{{ menuOpen }}">
@@ -388,7 +390,9 @@
         <button type="button" sc-camel-on-click="{{ nav.vision }}" style="background:none;border:0;border-bottom:1px solid #E3E2DD;padding:16px 0;cursor:pointer;text-align:left;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#161615">Our Vision</button>
         <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;border-bottom:1px solid #E3E2DD;padding:16px 0;cursor:pointer;text-align:left;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#161615">Practice Areas</button>
         <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;border-bottom:1px solid #E3E2DD;padding:16px 0;cursor:pointer;text-align:left;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#161615">Our People</button>
-        <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#121212;color:#fff;border:0;padding:13px 20px;margin-top:18px;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase">Contact Us</button>
+        <button type="button" sc-camel-on-click="{{ nav.feed }}" style="background:none;border:0;border-bottom:1px solid #E3E2DD;padding:16px 0;cursor:pointer;text-align:left;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#161615">Our Feed</button>
+        <button type="button" sc-camel-on-click="{{ nav.faq }}" style="background:none;border:0;border-bottom:1px solid #E3E2DD;padding:16px 0;cursor:pointer;text-align:left;font-size:13px;letter-spacing:.1em;text-transform:uppercase;color:#161615">FAQ</button>
+        <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#003531;color:#fff;border:0;padding:13px 20px;margin-top:18px;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase">Contact Us</button>
       </div>
       </sc-if>
     </div>
@@ -396,14 +400,14 @@
 
   <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
   <div>
-    <div style="position:relative;background:#121212;color:#fff;overflow:hidden;min-height:658px;display:flex;flex-direction:column;justify-content:center">
+    <div style="position:relative;background:#003531;color:#fff;overflow:hidden;min-height:658px;display:flex;flex-direction:column;justify-content:center">
       <img src="assets/images/hero-background.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:grayscale(1) contrast(1.05) brightness(.62)">
-      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,12,12,.72) 0%,rgba(12,12,12,.6) 45%,rgba(12,12,12,.82) 100%)"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,38,35,.72) 0%,rgba(0,38,35,.6) 45%,rgba(0,38,35,.82) 100%)"></div>
       <div data-reveal="" data-stagger="" style="position:relative;max-width:1440px;margin:auto auto;padding:44px 40px 34px;width:100%;text-align:left">
         <div style="font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:#D4B457">Tan &amp; Khong Chambers</div>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:48px;font-weight:500;line-height:1.22;letter-spacing:-.01em;margin:22px 0 0;padding-bottom:6px;color:#fff;max-width:22ch;text-wrap:pretty">Quality legal services,<br><em style="font-style:italic;color:#EBD79A">tailored to your needs.</em></h1>
         <div style="display:flex;flex-wrap:wrap;gap:12px;margin-top:32px">
-          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#B99824;color:#121212;border:0;padding:13px 24px;cursor:pointer;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600" style-hover="background:#D4B457">Book a consultation</button>
+          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#B99824;color:#003531;border:0;padding:13px 24px;cursor:pointer;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600" style-hover="background:#D4B457">Book a consultation</button>
           <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;color:#fff;border:1px solid rgba(255,255,255,.38);padding:13px 24px;cursor:pointer;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase" style-hover="border-color:#8A6A14;color:#D4B457">Our Practice Areas</button>
         </div>
       </div>
@@ -434,12 +438,12 @@
     <div data-reveal="" data-broad-wrap="" style="max-width:1440px;margin:0 auto;padding:130px 40px 40px">
       <div data-broad="" style="display:grid;grid-template-columns:repeat(12,minmax(0,1fr));gap:40px;align-items:start">
         <div style="grid-column:1/span 7;grid-row:1;position:relative;z-index:2;padding-top:24px">
-          <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:clamp(38px,5vw,70px);font-weight:400;line-height:1.04;letter-spacing:-.015em;color:#121212;margin:0;max-width:none">A broad practice,<br>handled personally</h2>
+          <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:clamp(38px,5vw,70px);font-weight:400;line-height:1.04;letter-spacing:-.015em;color:#003531;margin:0;max-width:none">A broad practice,<br>handled personally</h2>
           <div style="margin-top:64px;border-left:1px solid #C9C7C1;padding-left:34px;max-width:none">
             <p style="font-size:17px;line-height:1.75;color:#3B3B38;margin:0;text-wrap:pretty">At Tan &amp; Khong Chambers, we are committed to delivering reliable, practical, and results-oriented legal solutions tailored to our clients’ needs. We understand that every legal matter is unique, and we take pride in providing clear guidance, strategic advice, and dedicated representation at every stage of the process.</p>
             <p style="font-size:17px;line-height:1.75;color:#3B3B38;margin:20px 0 0;text-wrap:pretty">Our team combines legal expertise with a client-focused approach, ensuring that each matter is handled with professionalism, efficiency, and meticulous attention to detail. We believe that effective communication is essential, which is why we keep our clients informed and provide straightforward explanations of complex legal issues.</p>
             <p style="font-size:17px;line-height:1.75;color:#3B3B38;margin:20px 0 0;text-wrap:pretty">Whether you are an individual, business owner, or corporate client, we strive to provide quality legal services that inspire confidence and deliver meaningful outcomes. We are dedicated to building lasting relationships based on trust, integrity, and excellence.</p>
-            <button type="button" sc-camel-on-click="{{ nav.people }}" style="margin-top:44px;background:#EFEEE9;color:#161615;border:0;padding:15px 22px;cursor:pointer;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;display:inline-flex;align-items:center;gap:14px" style-hover="background:#121212;color:#fff">Meet our partners <span style="color:#B99824">—</span></button>
+            <button type="button" sc-camel-on-click="{{ nav.people }}" style="margin-top:44px;background:#EFEEE9;color:#161615;border:0;padding:15px 22px;cursor:pointer;font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;display:inline-flex;align-items:center;gap:14px" style-hover="background:#003531;color:#fff">Meet our partners <span style="color:#B99824">—</span></button>
           </div>
         </div>
         <div style="grid-column:8/-1;grid-row:1;position:relative;z-index:1;margin-right:min(-40px, calc((1440px - 100vw)/2 - 40px));display:flex;flex-direction:column;align-items:flex-end">
@@ -453,13 +457,13 @@
       </div>
     </div>
 
-    <div style="background:#121212;color:#fff;margin-top:100px">
+    <div style="background:#003531;color:#fff;margin-top:100px">
       <div data-reveal="" data-pa-head="" data-stagger="" style="max-width:1440px;margin:0 auto;padding:78px 40px 54px">
         <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#D4B457">Practice Areas</div>
         <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:clamp(32px,4.2vw,62px);font-weight:400;line-height:1.1;letter-spacing:-.01em;margin:22px 0 0;max-width:34ch;text-wrap:pretty">Broad proficiency across civil, criminal, corporate and conveyancing practice</h2>
       </div>
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:0 40px 78px;display:grid;grid-template-columns:minmax(0,.82fr) minmax(0,1.18fr);align-items:start">
-        <div data-pa-sticky="" style="position:sticky;top:104px;align-self:start;min-height:520px;height:520px;overflow:hidden;background:#1B1B1A">
+        <div data-pa-sticky="" style="position:sticky;top:124px;align-self:start;min-height:520px;height:520px;overflow:hidden;background:#0B4540">
           {{ paImage }}
         </div>
         <div data-pa-list="" sc-camel-on-mouse-leave="{{ paLeave }}" style="padding:2px 0 0 56px">
@@ -470,7 +474,7 @@
             <sc-if value="{{ pa.o_civil }}">
               <div style="padding:0 34px 26px 0">
                 <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.7);margin:0 0 18px;max-width:52ch;text-wrap:pretty">Litigation, arbitration and adjudication across all levels of the Malaysian courts, including commercial, construction, employment and negligence disputes.</p>
-                <button type="button" sc-camel-on-click="{{ nav.civil }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more →</button>
+                <button type="button" sc-camel-on-click="{{ nav.civil }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></button>
               </div>
             </sc-if>
           </div>
@@ -481,7 +485,7 @@
             <sc-if value="{{ pa.o_conveyancing }}">
               <div style="padding:0 34px 26px 0">
                 <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.7);margin:0 0 18px;max-width:52ch;text-wrap:pretty">Sale and purchase, transfers and leases, project financing, bank security documentation and post-auction completion.</p>
-                <button type="button" sc-camel-on-click="{{ nav.conveyancing }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more →</button>
+                <button type="button" sc-camel-on-click="{{ nav.conveyancing }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></button>
               </div>
             </sc-if>
           </div>
@@ -492,7 +496,7 @@
             <sc-if value="{{ pa.o_family }}">
               <div style="padding:0 34px 26px 0">
                 <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.7);margin:0 0 18px;max-width:52ch;text-wrap:pretty">Wills, grants of probate, letters of administration, small estate applications and estate planning.</p>
-                <button type="button" sc-camel-on-click="{{ nav.family }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more →</button>
+                <button type="button" sc-camel-on-click="{{ nav.family }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></button>
               </div>
             </sc-if>
           </div>
@@ -503,7 +507,7 @@
             <sc-if value="{{ pa.o_corporate }}">
               <div style="padding:0 34px 26px 0">
                 <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.7);margin:0 0 18px;max-width:52ch;text-wrap:pretty">Incorporation and governance, commercial agreements, regulatory compliance, due diligence and risk assessment.</p>
-                <button type="button" sc-camel-on-click="{{ nav.corporate }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more →</button>
+                <button type="button" sc-camel-on-click="{{ nav.corporate }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></button>
               </div>
             </sc-if>
           </div>
@@ -514,7 +518,7 @@
             <sc-if value="{{ pa.o_foreclosure }}">
               <div style="padding:0 34px 26px 0">
                 <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.7);margin:0 0 18px;max-width:52ch;text-wrap:pretty">End-to-end support for chargees, from recall notice and Form 16D through to valuation and public auction.</p>
-                <button type="button" sc-camel-on-click="{{ nav.foreclosure }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more →</button>
+                <button type="button" sc-camel-on-click="{{ nav.foreclosure }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></button>
               </div>
             </sc-if>
           </div>
@@ -525,7 +529,7 @@
             <sc-if value="{{ pa.o_criminal }}">
               <div style="padding:0 34px 26px 0">
                 <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.7);margin:0 0 18px;max-width:52ch;text-wrap:pretty">Defence from the earliest stages of investigation through to trial and appeal, including commercial and regulatory offences.</p>
-                <button type="button" sc-camel-on-click="{{ nav.criminal }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more →</button>
+                <button type="button" sc-camel-on-click="{{ nav.criminal }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></button>
               </div>
             </sc-if>
           </div>
@@ -536,12 +540,12 @@
             <sc-if value="{{ pa.o_other }}">
               <div style="padding:0 34px 26px 0">
                 <p style="font-size:15px;line-height:1.75;color:rgba(255,255,255,.7);margin:0 0 18px;max-width:52ch;text-wrap:pretty">Commissioner for Oaths services, certifying true copies, document authentication and attestation.</p>
-                <button type="button" sc-camel-on-click="{{ nav.other }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more →</button>
+                <button type="button" sc-camel-on-click="{{ nav.other }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:5px 0;cursor:pointer;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">Read more<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></button>
               </div>
             </sc-if>
           </div>
           <div style="display:flex;margin-top:34px">
-            <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">All practice areas →</button>
+            <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#fff" style-hover="color:#D4B457">All practice areas<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></button>
           </div>
         </div>
       </div>
@@ -551,24 +555,24 @@
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:96px 40px">
         <div style="display:grid;grid-template-columns:.42fr .58fr;gap:72px;align-items:start">
           <div>
-            <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:44px;font-weight:500;line-height:1.12;color:#121212;margin:0 0 20px">Our People</h2>
+            <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:44px;font-weight:500;line-height:1.12;color:#003531;margin:0 0 20px">Our People</h2>
             <p style="font-size:16px;line-height:1.8;color:#6B6B67;margin:0 0 28px">Our clients, partners and staff are our principal assets &amp; strength, where everyone is treasured &amp; valued for their contribution to the firm.</p>
-            <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#121212" style-hover="color:#8A6A14">Meet the team →</button>
+            <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:6px 0;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#003531" style-hover="color:#8A6A14">Meet the team<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></button>
           </div>
           <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:22px">
             <button type="button" sc-camel-on-click="{{ nav.khong }}" style="text-align:left;background:none;border:0;padding:0;cursor:pointer" style-hover="opacity:.82">
               <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:14px"><span style="font-size:10.5px;color:#94948F;line-height:1.4">portrait<br>khong zhi jian</span></div>
-              <div style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#121212;margin-top:14px">Khong Zhi Jian</div>
+              <div style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#003531;margin-top:14px">Khong Zhi Jian</div>
               <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8A6A14;margin-top:5px">Managing Partner</div>
             </button>
             <button type="button" sc-camel-on-click="{{ nav.john }}" style="text-align:left;background:none;border:0;padding:0;cursor:pointer" style-hover="opacity:.82">
               <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:14px"><span style="font-size:10.5px;color:#94948F;line-height:1.4">portrait<br>john wong</span></div>
-              <div style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#121212;margin-top:14px">John Wong Yu Ling</div>
+              <div style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#003531;margin-top:14px">John Wong Yu Ling</div>
               <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8A6A14;margin-top:5px">Partner</div>
             </button>
             <button type="button" sc-camel-on-click="{{ nav.esther }}" style="text-align:left;background:none;border:0;padding:0;cursor:pointer" style-hover="opacity:.82">
               <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:14px"><span style="font-size:10.5px;color:#94948F;line-height:1.4">portrait<br>esther leong</span></div>
-              <div style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#121212;margin-top:14px">Esther Leong Kar Hong</div>
+              <div style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#003531;margin-top:14px">Esther Leong Kar Hong</div>
               <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8A6A14;margin-top:5px">Associate</div>
             </button>
           </div>
@@ -576,9 +580,9 @@
       </div>
     </div>
 
-    <div style="position:relative;background:#121212;color:#fff;overflow:hidden">
+    <div style="position:relative;background:#003531;color:#fff;overflow:hidden">
       <img src="assets/images/banner-background.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;filter:grayscale(1) brightness(.34)">
-      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(12,12,12,.82),rgba(12,12,12,.9))"></div>
+      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,38,35,.82),rgba(0,38,35,.9))"></div>
       <div data-reveal="" style="position:relative;max-width:1440px;margin:0 auto;padding:104px 40px">
         <div style="display:flex;justify-content:space-between;align-items:flex-end;gap:40px;flex-wrap:wrap">
           <div>
@@ -615,12 +619,12 @@
 
     <div data-reveal="" style="background:#F4F3EF;border-top:1px solid #E3E2DD">
       <div style="max-width:1440px;margin:0 auto;padding:88px 40px;text-align:center">
-        <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:40px;font-weight:500;line-height:1.18;color:#121212;margin:0 auto;max-width:24ch">Serving clients across the Klang Valley from Subang Jaya.</h2>
+        <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:40px;font-weight:500;line-height:1.18;color:#003531;margin:0 auto;max-width:24ch">Serving clients across the Klang Valley from Subang Jaya.</h2>
         <p style="font-size:17px;line-height:1.75;color:#6B6B67;margin:20px auto 0;max-width:52ch;text-wrap:pretty">Your first consultation is free. Tell us about your matter and we will set out your options, the likely timeline and the cost before you commit to anything.</p>
         <div style="display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-top:36px">
-          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#B99824;color:#121212;border:0;padding:13px 24px;cursor:pointer;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600" style-hover="background:#D4B457">Book a consultation</button>
-          <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:1px solid #C9C7C1;padding:13px 24px;cursor:pointer;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#121212" style-hover="border-color:#8A6A14;color:#8A6A14">Meet the team</button>
-          <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:1px solid #C9C7C1;padding:13px 24px;cursor:pointer;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#121212" style-hover="border-color:#8A6A14;color:#8A6A14">Practice areas</button>
+          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#B99824;color:#003531;border:0;padding:13px 24px;cursor:pointer;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;font-weight:600" style-hover="background:#D4B457">Book a consultation</button>
+          <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:1px solid #C9C7C1;padding:13px 24px;cursor:pointer;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#003531" style-hover="border-color:#8A6A14;color:#8A6A14">Meet the team</button>
+          <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:1px solid #C9C7C1;padding:13px 24px;cursor:pointer;font-size:12.5px;letter-spacing:.12em;text-transform:uppercase;color:#003531" style-hover="border-color:#8A6A14;color:#8A6A14">Practice areas</button>
         </div>
       </div>
     </div>
@@ -629,7 +633,7 @@
 
   <sc-if value="{{ isAbout }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:76px 40px;text-align:center">
         <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#D4B457">The Firm</div>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:44px;font-weight:500;line-height:1.16;margin:16px 0 0">About Us</h1>
@@ -644,17 +648,17 @@
           <div style="border-top:1px solid #E3E2DD;margin-top:44px;padding-top:32px;display:grid;grid-template-columns:repeat(2,1fr);gap:32px">
             <div>
               <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Established</div>
-              <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;margin-top:10px;line-height:1.45">April 2019, at Sunway Geo Avenue, by Mr. Khong, Mr. Daryl Tan &amp; Mr. Nick Tan as founding partners.</div>
+              <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;margin-top:10px;line-height:1.45">April 2019, at Sunway Geo Avenue, by Mr. Khong, Mr. Daryl Tan &amp; Mr. Nick Tan as founding partners.</div>
             </div>
             <div>
               <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Today</div>
-              <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;margin-top:10px;line-height:1.45">Practising from Sky Park @ One City USJ, Subang Jaya, following the merger with John Wong Associates in October 2024.</div>
+              <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;margin-top:10px;line-height:1.45">Practising from Sky Park @ One City USJ, Subang Jaya, following the merger with John Wong Associates in October 2024.</div>
             </div>
           </div>
         </div>
         <div>
           <img src="assets/images/team-photo.jpg" alt="The team at Tan &amp; Khong Chambers" style="width:100%;display:block;filter:grayscale(.2)">
-          <div style="background:#121212;color:#fff;padding:30px 32px">
+          <div style="background:#003531;color:#fff;padding:30px 32px">
             <p style="font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:20px;line-height:1.6;margin:0;color:rgba(255,255,255,.9)">“Dedicated to provide quality legal services, tailored to your circumstances &amp; expectations”</p>
           </div>
         </div>
@@ -665,7 +669,7 @@
 
   <sc-if value="{{ isVision }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:76px 40px;text-align:center">
         <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#D4B457">Who We Are</div>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:44px;font-weight:500;line-height:1.16;margin:16px 0 0">Our Vision</h1>
@@ -673,19 +677,19 @@
     </div>
     <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:88px 40px 40px">
       <div style="display:grid;grid-template-columns:.36fr .64fr;gap:72px;align-items:start">
-        <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:36px;font-weight:500;line-height:1.15;color:#121212;margin:0">Our Vision</h2>
+        <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:36px;font-weight:500;line-height:1.15;color:#003531;margin:0">Our Vision</h2>
         <div>
-          <div style="border-top:1px solid #E3E2DD;padding:24px 0;display:flex;gap:20px"><span style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#8A6A14;min-width:34px">To</span><span style="font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">be ethical, creative &amp; resourceful in all our endeavours.</span></div>
-          <div style="border-top:1px solid #E3E2DD;padding:24px 0;display:flex;gap:20px"><span style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#8A6A14;min-width:34px">To</span><span style="font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">focus on quality &amp; detail in all our undertakings.</span></div>
-          <div style="border-top:1px solid #E3E2DD;padding:24px 0;display:flex;gap:20px"><span style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#8A6A14;min-width:34px">To</span><span style="font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">continuously excel &amp; broaden our knowledge, skill sets &amp; talents.</span></div>
-          <div style="border-top:1px solid #E3E2DD;padding:24px 0;display:flex;gap:20px"><span style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#8A6A14;min-width:34px">To</span><span style="font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">develop a platform of support to all personnel of the firm.</span></div>
-          <div style="border-top:1px solid #E3E2DD;border-bottom:1px solid #E3E2DD;padding:24px 0;display:flex;gap:20px"><span style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#8A6A14;min-width:34px">To</span><span style="font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">be an avenue of legal education to the public.</span></div>
+          <div style="border-top:1px solid #E3E2DD;padding:24px 0;display:flex;gap:9px;align-items:baseline"><span style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#8A6A14;flex:none">To</span><span style="font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">be ethical, creative &amp; resourceful in all our endeavours.</span></div>
+          <div style="border-top:1px solid #E3E2DD;padding:24px 0;display:flex;gap:9px;align-items:baseline"><span style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#8A6A14;flex:none">To</span><span style="font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">focus on quality &amp; detail in all our undertakings.</span></div>
+          <div style="border-top:1px solid #E3E2DD;padding:24px 0;display:flex;gap:9px;align-items:baseline"><span style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#8A6A14;flex:none">To</span><span style="font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">continuously excel &amp; broaden our knowledge, skill sets &amp; talents.</span></div>
+          <div style="border-top:1px solid #E3E2DD;padding:24px 0;display:flex;gap:9px;align-items:baseline"><span style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#8A6A14;flex:none">To</span><span style="font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">develop a platform of support to all personnel of the firm.</span></div>
+          <div style="border-top:1px solid #E3E2DD;border-bottom:1px solid #E3E2DD;padding:24px 0;display:flex;gap:9px;align-items:baseline"><span style="font-family:'EB Garamond',Georgia,serif;font-size:20px;color:#8A6A14;flex:none">To</span><span style="font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">be an avenue of legal education to the public.</span></div>
         </div>
       </div>
     </div>
     <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:48px 40px 96px">
       <div style="display:grid;grid-template-columns:.36fr .64fr;gap:72px;align-items:start">
-        <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:36px;font-weight:500;line-height:1.15;color:#121212;margin:0">Our Client Charter</h2>
+        <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:36px;font-weight:500;line-height:1.15;color:#003531;margin:0">Our Client Charter</h2>
         <div>
           <div style="border-top:1px solid #E3E2DD;padding:24px 0;font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">Providing quality &amp; personalized legal services that meets your needs.</div>
           <div style="border-top:1px solid #E3E2DD;padding:24px 0;font-size:18px;line-height:1.65;color:#161615;font-family:'EB Garamond',Georgia,serif">Providing frank and realistic legal advice.</div>
@@ -700,7 +704,7 @@
 
   <sc-if value="{{ isAreas }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:76px 40px;text-align:center">
         <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#D4B457">What We Do</div>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:44px;font-weight:500;line-height:1.16;margin:16px 0 18px">Practice Areas</h1>
@@ -710,67 +714,67 @@
     <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:52px 40px 96px">
       <div style="margin-bottom:40px;max-width:680px">
         <label style="display:block;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14;margin-bottom:11px">Find a service</label>
-        <input type="text" placeholder="Search: probate, arbitration, land search, foreclosure" value="{{ query }}" sc-camel-on-change="{{ onSearch }}" style="width:100%;border:1px solid #121212;background:#fff;font-size:16.5px;color:#161615;padding:14px 18px;outline:none" style-focus="border:1px solid #8A6A14;box-shadow:0 0 0 3px rgba(138,106,20,.18)">
+        <input type="text" placeholder="Search: probate, arbitration, land search, foreclosure" value="{{ query }}" sc-camel-on-change="{{ onSearch }}" style="width:100%;border:1px solid #003531;background:#fff;font-size:16.5px;color:#161615;padding:14px 18px;outline:none" style-focus="border:1px solid #8A6A14;box-shadow:0 0 0 3px rgba(138,106,20,.18)">
       </div>
       <div>
         <sc-if value="{{ show.civil }}" hint-placeholder-val="{{ true }}">
         <button type="button" sc-camel-on-click="{{ nav.civil }}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid #E3E2DD;padding:32px 0;cursor:pointer;display:grid;grid-template-columns:56px 1fr 1.1fr 40px;gap:24px;align-items:baseline" style-hover="background:#F4F3EF">
           <span style="font-size:11px;color:#8A6A14">01</span>
-          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#121212;line-height:1.2">Civil Litigation &amp; Dispute Resolution</span>
+          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#003531;line-height:1.2">Civil Litigation &amp; Dispute Resolution</span>
           <span style="font-size:14.5px;line-height:1.7;color:#6B6B67">General litigation, arbitration, contractual and commercial disputes, construction, employment, negligence, divorce and matrimonial, trust and succession, intellectual property, medico-legal, insolvency, asset recovery, admiralty and shipping.</span>
-          <span style="color:#8A6A14;font-size:18px;text-align:right">→</span>
+          <span style="color:#8A6A14;font-size:30px;line-height:.8;text-align:right">→</span>
         </button>
         </sc-if>
         <sc-if value="{{ show.conveyancing }}" hint-placeholder-val="{{ true }}">
         <button type="button" sc-camel-on-click="{{ nav.conveyancing }}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid #E3E2DD;padding:32px 0;cursor:pointer;display:grid;grid-template-columns:56px 1fr 1.1fr 40px;gap:24px;align-items:baseline" style-hover="background:#F4F3EF">
           <span style="font-size:11px;color:#8A6A14">02</span>
-          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#121212;line-height:1.2">Conveyancing &amp; Real Estate</span>
+          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#003531;line-height:1.2">Conveyancing &amp; Real Estate</span>
           <span style="font-size:14.5px;line-height:1.7;color:#6B6B67">Project financing, banking and security documentation, general conveyancing and contract preparation, discharge of charges, post-auction transfers, land searches and stamping, strata management support.</span>
-          <span style="color:#8A6A14;font-size:18px;text-align:right">→</span>
+          <span style="color:#8A6A14;font-size:30px;line-height:.8;text-align:right">→</span>
         </button>
         </sc-if>
         <sc-if value="{{ show.family }}" hint-placeholder-val="{{ true }}">
         <button type="button" sc-camel-on-click="{{ nav.family }}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid #E3E2DD;padding:32px 0;cursor:pointer;display:grid;grid-template-columns:56px 1fr 1.1fr 40px;gap:24px;align-items:baseline" style-hover="background:#F4F3EF">
           <span style="font-size:11px;color:#8A6A14">03</span>
-          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#121212;line-height:1.2">Family, Probate &amp; Trust</span>
+          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#003531;line-height:1.2">Family, Probate &amp; Trust</span>
           <span style="font-size:14.5px;line-height:1.7;color:#6B6B67">Preparation of wills, letters of administration and grants of probate, small estate applications, Amanah Raya agency matters, estate planning and contested probate.</span>
-          <span style="color:#8A6A14;font-size:18px;text-align:right">→</span>
+          <span style="color:#8A6A14;font-size:30px;line-height:.8;text-align:right">→</span>
         </button>
         </sc-if>
         <sc-if value="{{ show.corporate }}" hint-placeholder-val="{{ true }}">
         <button type="button" sc-camel-on-click="{{ nav.corporate }}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid #E3E2DD;padding:32px 0;cursor:pointer;display:grid;grid-template-columns:56px 1fr 1.1fr 40px;gap:24px;align-items:baseline" style-hover="background:#F4F3EF">
           <span style="font-size:11px;color:#8A6A14">04</span>
-          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#121212;line-height:1.2">Corporate &amp; Advisory</span>
+          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#003531;line-height:1.2">Corporate &amp; Advisory</span>
           <span style="font-size:14.5px;line-height:1.7;color:#6B6B67">General legal advisory, corporate affairs, human resource support, regulatory and compliance, liability and risk assessments, domestic and international transactions, consumer protection, due diligence and letters of demand.</span>
-          <span style="color:#8A6A14;font-size:18px;text-align:right">→</span>
+          <span style="color:#8A6A14;font-size:30px;line-height:.8;text-align:right">→</span>
         </button>
         </sc-if>
         <sc-if value="{{ show.foreclosure }}" hint-placeholder-val="{{ true }}">
         <button type="button" sc-camel-on-click="{{ nav.foreclosure }}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid #E3E2DD;padding:32px 0;cursor:pointer;display:grid;grid-template-columns:56px 1fr 1.1fr 40px;gap:24px;align-items:baseline" style-hover="background:#F4F3EF">
           <span style="font-size:11px;color:#8A6A14">05</span>
-          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#121212;line-height:1.2">Foreclosure</span>
+          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#003531;line-height:1.2">Foreclosure</span>
           <span style="font-size:14.5px;line-height:1.7;color:#6B6B67">Demand and recall notices, Form 16D, Originating Summons before the High Court, Form 16G for Pentadbir Tanah titles, valuation and auction coordination.</span>
-          <span style="color:#8A6A14;font-size:18px;text-align:right">→</span>
+          <span style="color:#8A6A14;font-size:30px;line-height:.8;text-align:right">→</span>
         </button>
         </sc-if>
         <sc-if value="{{ show.criminal }}" hint-placeholder-val="{{ true }}">
         <button type="button" sc-camel-on-click="{{ nav.criminal }}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid #E3E2DD;padding:32px 0;cursor:pointer;display:grid;grid-template-columns:56px 1fr 1.1fr 40px;gap:24px;align-items:baseline" style-hover="background:#F4F3EF">
           <span style="font-size:11px;color:#8A6A14">06</span>
-          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#121212;line-height:1.2">Criminal Litigation</span>
+          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#003531;line-height:1.2">Criminal Litigation</span>
           <span style="font-size:14.5px;line-height:1.7;color:#6B6B67">General crime, commercial and white-collar offences, money laundering investigations, and regulatory offences including environmental, fisheries, agricultural and planning permission matters.</span>
-          <span style="color:#8A6A14;font-size:18px;text-align:right">→</span>
+          <span style="color:#8A6A14;font-size:30px;line-height:.8;text-align:right">→</span>
         </button>
         </sc-if>
         <sc-if value="{{ show.other }}" hint-placeholder-val="{{ true }}">
         <button type="button" sc-camel-on-click="{{ nav.other }}" style="width:100%;text-align:left;background:none;border:0;border-bottom:1px solid #E3E2DD;padding:32px 0;cursor:pointer;display:grid;grid-template-columns:56px 1fr 1.1fr 40px;gap:24px;align-items:baseline" style-hover="background:#F4F3EF">
           <span style="font-size:11px;color:#8A6A14">07</span>
-          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#121212;line-height:1.2">Other Legal Services</span>
+          <span style="font-family:'EB Garamond',Georgia,serif;font-size:27px;color:#003531;line-height:1.2">Other Legal Services</span>
           <span style="font-size:14.5px;line-height:1.7;color:#6B6B67">Commissioner for Oaths services, certifying true copies and document authentication, and attestation for documents intended for domestic use.</span>
-          <span style="color:#8A6A14;font-size:18px;text-align:right">→</span>
+          <span style="color:#8A6A14;font-size:30px;line-height:.8;text-align:right">→</span>
         </button>
         </sc-if>
         <sc-if value="{{ noResults }}">
-          <div style="padding:56px 0;text-align:center;font-size:16px;color:#6B6B67">No practice area matches that term. Please <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:0;cursor:pointer;font-size:16px;color:#121212">contact us</button> and we will point you to the right lawyer.</div>
+          <div style="padding:56px 0;text-align:center;font-size:16px;color:#6B6B67">No practice area matches that term. Please <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:0;cursor:pointer;font-size:16px;color:#003531">contact us</button> and we will point you to the right lawyer.</div>
         </sc-if>
       </div>
     </div>
@@ -779,9 +783,9 @@
 
   <sc-if value="{{ isCivil }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:68px 40px">
-        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457">← Practice Areas</button>
+        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Practice Areas</button>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:40px;font-weight:500;line-height:1.16;margin:18px 0 0">Civil Litigation &amp; Dispute Resolution</h1>
       </div>
     </div>
@@ -793,15 +797,15 @@
         <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0;text-wrap:pretty">In strata developments, we advise joint management bodies and management corporations on governance, disputes, and compliance under the Strata Management Act 2013.</p>
       </div>
       <div>
-        <div style="border-top:2px solid #121212;padding-top:20px">
+        <div style="border-top:2px solid #003531;padding-top:20px">
           <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Services</div>
           <div style="margin-top:16px;display:flex;flex-direction:column;gap:11px;font-size:14.5px;color:#2E2E2C;line-height:1.5">
             <span>General Litigation</span><span>Arbitration</span><span>Contractual Disputes</span><span>Commercial &amp; Corporate</span><span>Construction</span><span>Employment &amp; Industrial Law</span><span>Negligence &amp; Tort</span><span>Divorce &amp; Matrimonial Affairs</span><span>Trust &amp; Succession</span><span>Intellectual Property</span><span>Medico-Legal</span><span>Insolvency &amp; Bankruptcy</span><span>Asset Recovery</span><span>Admiralty &amp; Shipping</span>
           </div>
         </div>
         <div style="background:#F4F3EF;padding:26px 24px;margin-top:32px">
-          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;line-height:1.35">Discuss a dispute with us</div>
-          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#121212;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#121212">Make an enquiry</button>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;line-height:1.35">Discuss a dispute with us</div>
+          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#003531;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#003531">Make an enquiry</button>
         </div>
       </div>
     </div>
@@ -810,9 +814,9 @@
 
   <sc-if value="{{ isConveyancing }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:68px 40px">
-        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457">← Practice Areas</button>
+        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Practice Areas</button>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:40px;font-weight:500;line-height:1.16;margin:18px 0 0">Conveyancing &amp; Real Estate</h1>
       </div>
     </div>
@@ -820,20 +824,20 @@
       <div>
         <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0 0 26px;text-wrap:pretty">Our firm provides comprehensive legal support in property transactions and real estate development, with all work grounded in the National Land Code 1965. We advise individuals, property developers, and financial institutions on sale and purchase agreements, property transfers, leasing arrangements, and financing structures.</p>
         <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0 0 26px;text-wrap:pretty">Our firm also maintains an active banking and conveyancing practice, regularly acting for financial institutions in the preparation and execution of loan and security documentation. We also assist with project financing and banking-related documentation, ensuring compliance with regulatory frameworks overseen by Bank Negara Malaysia. We have extensive experience handling loan documentations for banks such as Public Bank Berhad, Public Islamic Bank Berhad, RHB Bank Berhad, RHB Islamic Bank Berhad, and CIMB Bank Berhad, ensuring compliance with banking requirements and the National Land Code 1965. In addition, we routinely act in the discharge of charges for a wide range of financial institutions, including Public Bank Berhad, RHB Bank Berhad, CIMB Bank Berhad, AmBank (M) Berhad, Standard Chartered Bank Malaysia Berhad, AIA Berhad, Affin Bank Berhad, and Bank Simpanan Nasional. Our familiarity with institutional requirements and land registration processes enables us to deliver efficient, accurate, and timely completion of financing and discharge matters.</p>
-        <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:28px;font-weight:500;color:#121212;margin:42px 0 18px">Post-auction foreclosure completion</h2>
+        <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:28px;font-weight:500;color:#003531;margin:42px 0 18px">Post-auction foreclosure completion</h2>
         <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0 0 26px;text-wrap:pretty">The firm also handles post-auction foreclosure matters with a focus on ensuring smooth completion following a successful sale. This includes acting for purchasers in liaising with the auctioning bank to obtain formal acknowledgement of full settlement of the balance purchase price (BPP), as well as attending to the necessary court processes for the transfer of title. We regularly engage with the High Court to facilitate the execution and perfection of statutory transfer documents, including Form 16F, and with the relevant Land Offices for the processing and registration of Form 16I, both pursuant to the National Land Code 1965. This ensures that ownership is properly vested in the purchaser in accordance with legal requirements. Our familiarity with foreclosure procedures and coordination between financial institutions, the courts, and land authorities enables us to complete post-auction transactions efficiently and with minimal delay.</p>
         <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0;text-wrap:pretty">We also provide ancillary support services, including the stamping of legal documents and the conduct of land searches to verify title particulars, ownership status, and existing encumbrances.</p>
       </div>
       <div>
-        <div style="border-top:2px solid #121212;padding-top:20px">
+        <div style="border-top:2px solid #003531;padding-top:20px">
           <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Services</div>
           <div style="margin-top:16px;display:flex;flex-direction:column;gap:11px;font-size:14.5px;color:#2E2E2C;line-height:1.5">
             <span>Financing for Projects</span><span>Banking &amp; Security Documentation</span><span>General Conveyancing &amp; Contract Preparation</span><span>Discharge of Charges</span><span>Post-Auction Transfers</span><span>Land Searches &amp; Stamping</span><span>Strata Management Support</span>
           </div>
         </div>
         <div style="background:#F4F3EF;padding:26px 24px;margin-top:32px">
-          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;line-height:1.35">Panel enquiries welcome from financial institutions</div>
-          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#121212;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#121212">Make an enquiry</button>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;line-height:1.35">Panel enquiries welcome from financial institutions</div>
+          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#003531;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#003531">Make an enquiry</button>
         </div>
       </div>
     </div>
@@ -842,9 +846,9 @@
 
   <sc-if value="{{ isFamily }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:68px 40px">
-        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457">← Practice Areas</button>
+        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Practice Areas</button>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:40px;font-weight:500;line-height:1.16;margin:18px 0 0">Family, Probate &amp; Trust</h1>
       </div>
     </div>
@@ -855,15 +859,15 @@
         <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0;text-wrap:pretty">Our firm has extensive experience in contested probate matters, particularly in challenging the validity and administration of wills under Malaysian law. We have acted in cases to declare wills invalid on grounds that the testator lacked testamentary capacity, applying the legal principles governing capacity and intention under the Wills Act 1959 and related probate jurisprudence.</p>
       </div>
       <div>
-        <div style="border-top:2px solid #121212;padding-top:20px">
+        <div style="border-top:2px solid #003531;padding-top:20px">
           <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Services</div>
           <div style="margin-top:16px;display:flex;flex-direction:column;gap:11px;font-size:14.5px;color:#2E2E2C;line-height:1.5">
             <span>Preparation of Wills</span><span>Letters of Administration / Grant of Probate</span><span>Small Estate Applications</span><span>Amanah Raya Agency Matters</span><span>Estate Planning &amp; Trusts</span><span>Contested Probate</span>
           </div>
         </div>
         <div style="background:#F4F3EF;padding:26px 24px;margin-top:32px">
-          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;line-height:1.35">Speak to us in confidence</div>
-          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#121212;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#121212">Make an enquiry</button>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;line-height:1.35">Speak to us in confidence</div>
+          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#003531;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#003531">Make an enquiry</button>
         </div>
       </div>
     </div>
@@ -872,9 +876,9 @@
 
   <sc-if value="{{ isCorporate }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:68px 40px">
-        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457">← Practice Areas</button>
+        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Practice Areas</button>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:40px;font-weight:500;line-height:1.16;margin:18px 0 0">Corporate &amp; Advisory</h1>
       </div>
     </div>
@@ -887,15 +891,15 @@
         <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0;text-wrap:pretty">Our approach integrates risk assessment, liability management, and forward-looking compliance strategies, including advisory on consumer-facing obligations under the Consumer Protection Act 1999 and financial regulations overseen by Bank Negara Malaysia.</p>
       </div>
       <div>
-        <div style="border-top:2px solid #121212;padding-top:20px">
+        <div style="border-top:2px solid #003531;padding-top:20px">
           <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Services</div>
           <div style="margin-top:16px;display:flex;flex-direction:column;gap:11px;font-size:14.5px;color:#2E2E2C;line-height:1.5">
             <span>General Legal Advisory</span><span>Corporate Affairs</span><span>Human Resource Support</span><span>Regulatory &amp; Compliance</span><span>Liability &amp; Risks Assessments</span><span>Domestic &amp; International Transactions</span><span>Commercial Agreements</span><span>Due Diligence &amp; Corporate Searches</span><span>Letters of Demand &amp; Debt Recovery</span><span>Consumer Protection</span>
           </div>
         </div>
         <div style="background:#F4F3EF;padding:26px 24px;margin-top:32px">
-          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;line-height:1.35">Retainer and ad-hoc advisory available</div>
-          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#121212;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#121212">Make an enquiry</button>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;line-height:1.35">Retainer and ad-hoc advisory available</div>
+          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#003531;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#003531">Make an enquiry</button>
         </div>
       </div>
     </div>
@@ -904,9 +908,9 @@
 
   <sc-if value="{{ isForeclosure }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:68px 40px">
-        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457">← Practice Areas</button>
+        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Practice Areas</button>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:40px;font-weight:500;line-height:1.16;margin:18px 0 0">Foreclosure</h1>
       </div>
     </div>
@@ -917,23 +921,23 @@
         <div style="border-top:1px solid #E3E2DD;margin-top:44px;padding-top:34px">
           <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14;margin-bottom:24px">How a matter progresses</div>
           <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:2px">
-            <div style="background:#F4F3EF;padding:22px 20px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:19px;color:#121212;margin-top:10px;line-height:1.3">Demand &amp; recall notices</div></div>
-            <div style="background:#F4F3EF;padding:22px 20px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:19px;color:#121212;margin-top:10px;line-height:1.3">Form 16D or Form 16G</div></div>
-            <div style="background:#F4F3EF;padding:22px 20px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:19px;color:#121212;margin-top:10px;line-height:1.3">Proceedings &amp; valuation</div></div>
-            <div style="background:#F4F3EF;padding:22px 20px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:19px;color:#121212;margin-top:10px;line-height:1.3">Public auction</div></div>
+            <div style="background:#F4F3EF;padding:22px 20px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:19px;color:#003531;margin-top:10px;line-height:1.3">Demand &amp; recall notices</div></div>
+            <div style="background:#F4F3EF;padding:22px 20px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:19px;color:#003531;margin-top:10px;line-height:1.3">Form 16D or Form 16G</div></div>
+            <div style="background:#F4F3EF;padding:22px 20px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:19px;color:#003531;margin-top:10px;line-height:1.3">Proceedings &amp; valuation</div></div>
+            <div style="background:#F4F3EF;padding:22px 20px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:19px;color:#003531;margin-top:10px;line-height:1.3">Public auction</div></div>
           </div>
         </div>
       </div>
       <div>
-        <div style="border-top:2px solid #121212;padding-top:20px">
+        <div style="border-top:2px solid #003531;padding-top:20px">
           <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Services</div>
           <div style="margin-top:16px;display:flex;flex-direction:column;gap:11px;font-size:14.5px;color:#2E2E2C;line-height:1.5">
             <span>Demand &amp; Recall Notices</span><span>Form 16D Preparation &amp; Registration</span><span>Originating Summons (High Court)</span><span>Form 16G (Pentadbir Tanah titles)</span><span>Valuer &amp; Auctioneer Coordination</span><span>Post-Auction Completion</span>
           </div>
         </div>
         <div style="background:#F4F3EF;padding:26px 24px;margin-top:32px">
-          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;line-height:1.35">Acting for chargees and purchasers</div>
-          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#121212;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#121212">Make an enquiry</button>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;line-height:1.35">Acting for chargees and purchasers</div>
+          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#003531;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#003531">Make an enquiry</button>
         </div>
       </div>
     </div>
@@ -942,9 +946,9 @@
 
   <sc-if value="{{ isCriminal }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:68px 40px">
-        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457">← Practice Areas</button>
+        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Practice Areas</button>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:40px;font-weight:500;line-height:1.16;margin:18px 0 0">Criminal Litigation</h1>
       </div>
     </div>
@@ -955,13 +959,13 @@
         <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0;text-wrap:pretty">The firm also has experience handling regulatory and statutory offences across a range of sectors, including environmental (alam sekitar) prosecutions, fisheries-related cases involving fishing vessels, agricultural offences, and cases involving breaches of planning permission (kebenaran merancang). Our approach focuses on navigating the relevant regulatory frameworks, engaging with enforcement authorities, and advancing a structured defence strategy tailored to the specific statutory regime involved.</p>
       </div>
       <div>
-        <div style="border-top:2px solid #121212;padding-top:20px">
+        <div style="border-top:2px solid #003531;padding-top:20px">
           <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Services</div>
           <div style="margin-top:16px;display:flex;flex-direction:column;gap:11px;font-size:14.5px;color:#2E2E2C;line-height:1.5">
             <span>General Crime</span><span>Commercial Offences</span><span>White-Collar &amp; Money Laundering</span><span>Regulatory Offences</span><span>Bail &amp; Investigation Stage Advice</span><span>Appeals</span>
           </div>
         </div>
-        <div style="background:#121212;padding:26px 24px;margin-top:32px;color:#fff">
+        <div style="background:#003531;padding:26px 24px;margin-top:32px;color:#fff">
           <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;line-height:1.35">Urgent matter or arrest?</div>
           <div style="font-size:14px;line-height:1.6;color:rgba(255,255,255,.78);margin-top:10px">Call the office during business hours and ask for the criminal litigation team.</div>
           <a href="tel:+60330058027" style="display:block;background:#B99824;color:#fff;padding:14px 22px;margin-top:18px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;text-align:center" style-hover="background:#D4B457;color:#fff">+603 3005 8027</a>
@@ -973,9 +977,9 @@
 
   <sc-if value="{{ isOther }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:68px 40px">
-        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457">← Practice Areas</button>
+        <button type="button" sc-camel-on-click="{{ nav.areas }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#D4B457"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Practice Areas</button>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:40px;font-weight:500;line-height:1.16;margin:18px 0 0">Other Legal Services</h1>
       </div>
     </div>
@@ -983,16 +987,16 @@
       <div>
         <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0;text-wrap:pretty">In addition to our core practice areas, we provide essential legal support services that facilitate both personal and corporate transactions. These include acting as Commissioner for Oaths for affidavits and statutory declarations, certifying true copies of documents, and providing attestation services for documents intended for domestic use.</p>
         <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:2px;margin-top:44px">
-          <div style="background:#F4F3EF;padding:28px 24px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;line-height:1.3">Commissioner for Oaths</div><div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:10px">Affidavits and statutory declarations.</div></div>
-          <div style="background:#F4F3EF;padding:28px 24px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;line-height:1.3">Certified True Copies</div><div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:10px">Certification and document authentication.</div></div>
-          <div style="background:#F4F3EF;padding:28px 24px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;line-height:1.3">Attestation</div><div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:10px">For documents intended for domestic use.</div></div>
+          <div style="background:#F4F3EF;padding:28px 24px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;line-height:1.3">Commissioner for Oaths</div><div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:10px">Affidavits and statutory declarations.</div></div>
+          <div style="background:#F4F3EF;padding:28px 24px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;line-height:1.3">Certified True Copies</div><div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:10px">Certification and document authentication.</div></div>
+          <div style="background:#F4F3EF;padding:28px 24px"><div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;line-height:1.3">Attestation</div><div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:10px">For documents intended for domestic use.</div></div>
         </div>
       </div>
       <div>
         <div style="background:#F4F3EF;padding:26px 24px">
-          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212;line-height:1.35">Walk-in services are by appointment</div>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#003531;line-height:1.35">Walk-in services are by appointment</div>
           <div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:10px">Office hours are 9:00am to 6:00pm, Monday to Friday.</div>
-          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#121212;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#121212">Fix an appointment</button>
+          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#003531;color:#fff;border:0;padding:14px 22px;margin-top:18px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;width:100%" style-hover="background:#B99824;color:#003531">Fix an appointment</button>
         </div>
       </div>
     </div>
@@ -1001,7 +1005,7 @@
 
   <sc-if value="{{ isPeople }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:76px 40px;text-align:center">
         <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#D4B457">The Team</div>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:44px;font-weight:500;line-height:1.16;margin:16px 0 18px">Our People</h1>
@@ -1012,25 +1016,25 @@
       <div style="display:grid;grid-template-columns:repeat(4,1fr);gap:34px">
         <button type="button" sc-camel-on-click="{{ nav.khong }}" style="text-align:left;background:none;border:0;padding:0;cursor:pointer" style-hover="opacity:.82">
           <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:14px"><span style="font-size:10.5px;color:#94948F;line-height:1.4">portrait<br>khong zhi jian</span></div>
-          <div style="font-family:'EB Garamond',Georgia,serif;font-size:23px;color:#121212;margin-top:16px">Khong Zhi Jian</div>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:23px;color:#003531;margin-top:16px">Khong Zhi Jian</div>
           <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8A6A14;margin-top:6px">Managing Partner</div>
           <div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:12px">Civil &amp; criminal litigation. AIAC-empanelled adjudicator and mediator.</div>
         </button>
         <button type="button" sc-camel-on-click="{{ nav.john }}" style="text-align:left;background:none;border:0;padding:0;cursor:pointer" style-hover="opacity:.82">
           <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:14px"><span style="font-size:10.5px;color:#94948F;line-height:1.4">portrait<br>john wong</span></div>
-          <div style="font-family:'EB Garamond',Georgia,serif;font-size:23px;color:#121212;margin-top:16px">John Wong Yu Ling</div>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:23px;color:#003531;margin-top:16px">John Wong Yu Ling</div>
           <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8A6A14;margin-top:6px">Partner</div>
           <div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:12px">Corporate and conveyancing. Accredited mediator and Commissioner for Oaths.</div>
         </button>
         <button type="button" sc-camel-on-click="{{ nav.esther }}" style="text-align:left;background:none;border:0;padding:0;cursor:pointer" style-hover="opacity:.82">
           <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:14px"><span style="font-size:10.5px;color:#94948F;line-height:1.4">portrait<br>esther leong</span></div>
-          <div style="font-family:'EB Garamond',Georgia,serif;font-size:23px;color:#121212;margin-top:16px">Esther Leong Kar Hong</div>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:23px;color:#003531;margin-top:16px">Esther Leong Kar Hong</div>
           <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8A6A14;margin-top:6px">Associate</div>
           <div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:12px">Litigation support with a deep interest in family and medical law.</div>
         </button>
-        <button type="button" sc-camel-on-click="{{ nav.adibah }}" style="text-align:left;background:none;border:0;padding:0;cursor:pointer" style-hover="opacity:.82">
-          <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:14px"><span style="font-size:10.5px;color:#94948F;line-height:1.4">portrait<br>nurul adibah</span></div>
-          <div style="font-family:'EB Garamond',Georgia,serif;font-size:23px;color:#121212;margin-top:16px">Nurul Adibah binti Yahaya</div>
+        <button type="button" sc-camel-on-click="{{ nav.nabila }}" style="text-align:left;background:none;border:0;padding:0;cursor:pointer" style-hover="opacity:.82">
+          <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:14px"><span style="font-size:10.5px;color:#94948F;line-height:1.4">portrait<br>nurul nabila</span></div>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:23px;color:#003531;margin-top:16px">Nurul Nabila binti Fadlay</div>
           <div style="font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#8A6A14;margin-top:6px">Associate</div>
           <div style="font-size:14px;line-height:1.7;color:#6B6B67;margin-top:12px">Profile to be supplied.</div>
         </button>
@@ -1045,17 +1049,17 @@
   <sc-if value="{{ isKhong }}">
   <div>
     <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:56px 40px 96px">
-      <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">← Our People</button>
+      <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Our People</button>
       <div style="display:grid;grid-template-columns:.38fr 1fr;gap:72px;margin-top:36px;align-items:start">
         <div>
           <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:16px"><span style="font-size:11px;color:#94948F;line-height:1.4">portrait<br>khong zhi jian</span></div>
-          <div style="border-top:2px solid #121212;margin-top:26px;padding-top:20px">
+          <div style="border-top:2px solid #003531;margin-top:26px;padding-top:20px">
             <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Contact</div>
             <div style="font-size:15px;line-height:1.9;color:#2E2E2C;margin-top:12px">+603 3005 8027 ext 102<br><a href="mailto:zjkhong@tkchambers.com">zjkhong@tkchambers.com</a></div>
           </div>
         </div>
         <div>
-          <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:42px;font-weight:500;line-height:1.12;color:#121212;margin:0">Khong Zhi Jian</h1>
+          <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:42px;font-weight:500;line-height:1.12;color:#003531;margin:0">Khong Zhi Jian</h1>
           <div style="font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14;margin-top:14px">Managing Partner</div>
           <div style="width:64px;height:2px;background:#B99824;margin:28px 0"></div>
           <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0 0 24px;text-wrap:pretty">Khong graduated from the University of Waikato, NZ in 2012 with a conjoint Bachelors of Laws (honours) and also a Bachelors of Social Science, majoring in Political Science. It was also in the same year of 2012 that he was called to the Bar in the New Zealand High Court as a Barrister &amp; Solicitor. Subsequently in 2014, Khong was also admitted in the High Court of Malaya as an Advocate &amp; Solicitor. In April 2019, Khong founded Tan &amp; Khong Chambers.</p>
@@ -1070,17 +1074,17 @@
   <sc-if value="{{ isJohn }}">
   <div>
     <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:56px 40px 96px">
-      <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">← Our People</button>
+      <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Our People</button>
       <div style="display:grid;grid-template-columns:.38fr 1fr;gap:72px;margin-top:36px;align-items:start">
         <div>
           <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:16px"><span style="font-size:11px;color:#94948F;line-height:1.4">portrait<br>john wong</span></div>
-          <div style="border-top:2px solid #121212;margin-top:26px;padding-top:20px">
+          <div style="border-top:2px solid #003531;margin-top:26px;padding-top:20px">
             <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Contact</div>
             <div style="font-size:15px;line-height:1.9;color:#2E2E2C;margin-top:12px">+603 3005 8027 ext 103<br><a href="mailto:john@tkchambers.com">john@tkchambers.com</a></div>
           </div>
         </div>
         <div>
-          <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:42px;font-weight:500;line-height:1.12;color:#121212;margin:0">John Wong Yu Ling</h1>
+          <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:42px;font-weight:500;line-height:1.12;color:#003531;margin:0">John Wong Yu Ling</h1>
           <div style="font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14;margin-top:14px">Partner</div>
           <div style="width:64px;height:2px;background:#B99824;margin:28px 0"></div>
           <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0 0 24px;text-wrap:pretty">John graduated with a Bachelor of Laws (Honours) from the University of Leeds, UK. He was subsequently admitted as an Advocate &amp; Solicitor of the High Court of Malaya in 2014 and also in the High Court of Sabah &amp; Sarawak in Sabah in 2018 (non-practicing).</p>
@@ -1097,17 +1101,17 @@
   <sc-if value="{{ isEsther }}">
   <div>
     <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:56px 40px 96px">
-      <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">← Our People</button>
+      <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Our People</button>
       <div style="display:grid;grid-template-columns:.38fr 1fr;gap:72px;margin-top:36px;align-items:start">
         <div>
           <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:16px"><span style="font-size:11px;color:#94948F;line-height:1.4">portrait<br>esther leong</span></div>
-          <div style="border-top:2px solid #121212;margin-top:26px;padding-top:20px">
+          <div style="border-top:2px solid #003531;margin-top:26px;padding-top:20px">
             <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Contact</div>
             <div style="font-size:15px;line-height:1.9;color:#2E2E2C;margin-top:12px">+603 3005 8027 ext 105<br><a href="mailto:esther@tkchambers.com">esther@tkchambers.com</a></div>
           </div>
         </div>
         <div>
-          <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:42px;font-weight:500;line-height:1.12;color:#121212;margin:0">Esther Leong Kar Hong</h1>
+          <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:42px;font-weight:500;line-height:1.12;color:#003531;margin:0">Esther Leong Kar Hong</h1>
           <div style="font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14;margin-top:14px">Associate</div>
           <div style="width:64px;height:2px;background:#B99824;margin:28px 0"></div>
           <p style="font-size:17px;line-height:1.85;color:#2E2E2C;margin:0 0 24px;text-wrap:pretty">Esther graduated with a Bachelor of Laws (Hons) from Multimedia University in 2021. She then commenced pupillage under our Mr. Khong in 2022 and was called to the Bar in the High Court of Malaya in mid 2023, where she was retained by the firm as an Associate.</p>
@@ -1119,23 +1123,95 @@
   </div>
   </sc-if>
 
-  <sc-if value="{{ isAdibah }}">
+  <sc-if value="{{ isNabila }}">
   <div>
     <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:56px 40px 96px">
-      <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">← Our People</button>
+      <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14"><span style="font-size:24px;line-height:0;vertical-align:-3px;margin-right:8px;letter-spacing:0">←</span>Our People</button>
       <div style="display:grid;grid-template-columns:.38fr 1fr;gap:72px;margin-top:36px;align-items:start">
         <div>
-          <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:16px"><span style="font-size:11px;color:#94948F;line-height:1.4">portrait<br>nurul adibah</span></div>
-          <div style="border-top:2px solid #121212;margin-top:26px;padding-top:20px">
+          <div style="aspect-ratio:4/5;background:repeating-linear-gradient(135deg,#E6E4DF 0 8px,#EFEEEA 8px 16px);display:flex;align-items:flex-end;padding:16px"><span style="font-size:11px;color:#94948F;line-height:1.4">portrait<br>nurul nabila</span></div>
+          <div style="border-top:2px solid #003531;margin-top:26px;padding-top:20px">
             <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Contact</div>
             <div style="font-size:15px;line-height:1.9;color:#2E2E2C;margin-top:12px">+603 3005 8027<br><a href="mailto:admin@tkchambers.com">admin@tkchambers.com</a></div>
           </div>
         </div>
         <div>
-          <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:42px;font-weight:500;line-height:1.12;color:#121212;margin:0">Nurul Adibah binti Yahaya</h1>
+          <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:42px;font-weight:500;line-height:1.12;color:#003531;margin:0">Nurul Nabila binti Fadlay</h1>
           <div style="font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14;margin-top:14px">Associate</div>
           <div style="width:64px;height:2px;background:#B99824;margin:28px 0"></div>
-          <p style="font-size:13px;line-height:1.8;color:#94948F;margin:0;background:#F4F3EF;padding:22px 24px">Biography pending. Please supply Nurul Adibah’s qualifications, year of admission, practice focus and direct extension.</p>
+          <p style="font-size:13px;line-height:1.8;color:#94948F;margin:0;background:#F4F3EF;padding:22px 24px">Biography pending. Please supply Nurul Nabila’s qualifications, year of admission, practice focus and direct extension.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isFeed }}">
+  <div>
+    <div style="background:#003531;color:#fff">
+      <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:76px 40px;text-align:center">
+        <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#D4B457">News &amp; Notices</div>
+        <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:44px;font-weight:500;line-height:1.16;margin:16px 0 18px">Our Feed</h1>
+        <p style="font-size:17px;line-height:1.8;color:rgba(255,255,255,.8);margin:0 auto;max-width:62ch">Firm notices, legal updates and articles from Tan &amp; Khong Chambers.</p>
+      </div>
+    </div>
+    <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:80px 40px 96px">
+      <div style="display:grid;grid-template-columns:.36fr .64fr;gap:72px;align-items:start">
+        <div>
+          <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:36px;font-weight:500;line-height:1.15;color:#003531;margin:0 0 18px">Latest from the firm</h2>
+          <p style="font-size:16px;line-height:1.8;color:#6B6B67;margin:0">Follow us for more updates.</p>
+          <div style="display:flex;flex-direction:column;gap:12px;margin-top:20px">
+            <a href="https://www.tiktok.com/@t.k.chambers" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;font-size:15px;color:#003531" style-hover="color:#8A6A14">{{ icons.tiktok }} @t.k.chambers</a>
+            <a href="https://www.instagram.com/tk_chambers/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;font-size:15px;color:#003531" style-hover="color:#8A6A14">{{ icons.instagram }} @tk_chambers</a>
+          </div>
+        </div>
+        <div>
+          <sc-for list="{{ posts }}" as="post">
+          <div style="display:flex;gap:28px">
+            <div style="position:relative;flex:0 0 14px;display:flex;justify-content:center">
+              <div style="position:absolute;top:0;bottom:0;width:1px;background:#E3E2DD"></div>
+              <div style="position:relative;width:13px;height:13px;border-radius:50%;background:#B99824;border:3px solid #FAF9F5;box-sizing:content-box;margin-top:2px"></div>
+            </div>
+            <div style="padding:0 0 60px;flex:1;min-width:0">
+              <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">{{ post.date }} <span style="color:#C9C7C1;margin:0 8px">|</span> {{ post.tag }}</div>
+              <h3 style="font-family:'EB Garamond',Georgia,serif;font-size:28px;font-weight:500;line-height:1.2;color:#003531;margin:12px 0 0">{{ post.title }}</h3>
+              <p style="font-size:16.5px;line-height:1.8;color:#2E2E2C;margin:14px 0 0;max-width:64ch;text-wrap:pretty">{{ post.body }}</p>
+              <sc-if value="{{ post.link }}"><a href="{{ post.link }}" target="_blank" rel="noopener" style="display:inline-block;margin-top:16px;border-bottom:1px solid #B99824;padding:5px 0;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#003531" style-hover="color:#8A6A14">Read more <span style="font-size:24px;line-height:0;vertical-align:-3px;letter-spacing:0">→</span></a></sc-if>
+            </div>
+          </div>
+          </sc-for>
+        </div>
+      </div>
+    </div>
+  </div>
+  </sc-if>
+
+  <sc-if value="{{ isFaq }}">
+  <div>
+    <div style="background:#003531;color:#fff">
+      <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:76px 40px;text-align:center">
+        <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#D4B457">Before You Call</div>
+        <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:44px;font-weight:500;line-height:1.16;margin:16px 0 18px">Frequently Asked Questions</h1>
+        <p style="font-size:17px;line-height:1.8;color:rgba(255,255,255,.8);margin:0 auto;max-width:62ch">Answers to the questions we are asked most often. If yours is not here, please get in touch.</p>
+      </div>
+    </div>
+    <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:80px 40px 96px">
+      <div style="display:grid;grid-template-columns:.36fr .64fr;gap:72px;align-items:start">
+        <div>
+          <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:36px;font-weight:500;line-height:1.15;color:#003531;margin:0 0 18px">Fees &amp; process</h2>
+          <p style="font-size:16px;line-height:1.8;color:#6B6B67;margin:0 0 24px">Can’t find what you are looking for? Our team is happy to help.</p>
+          <button type="button" sc-camel-on-click="{{ nav.contact }}" style="background:#003531;color:#fff;border:0;padding:15px 26px;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#B99824;color:#003531">Contact us</button>
+        </div>
+        <div style="border-bottom:1px solid #E3E2DD">
+          <sc-for list="{{ faqList }}" as="f">
+          <div style="border-top:1px solid #E3E2DD">
+            <button type="button" sc-camel-on-click="{{ f.toggle }}" style="width:100%;text-align:left;background:none;border:0;padding:24px 0;cursor:pointer;display:flex;justify-content:space-between;gap:24px;align-items:center">
+              <span style="font-family:'EB Garamond',Georgia,serif;font-size:22px;color:#003531">{{ f.q }}</span>
+              <span style="color:#8A6A14;font-size:28px;line-height:1;width:20px;text-align:center">{{ f.sign }}</span>
+            </button>
+            <sc-if value="{{ f.open }}"><div data-acc="" style="font-size:15.5px;line-height:1.8;color:#6B6B67;padding:0 0 26px;max-width:64ch">{{ f.a }}</div></sc-if>
+          </div>
+          </sc-for>
         </div>
       </div>
     </div>
@@ -1144,7 +1220,7 @@
 
   <sc-if value="{{ isContact }}">
   <div>
-    <div style="background:#121212;color:#fff">
+    <div style="background:#003531;color:#fff">
       <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:76px 40px;text-align:center">
         <div style="font-size:11.5px;letter-spacing:.2em;text-transform:uppercase;color:#D4B457">Get In Touch</div>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:44px;font-weight:500;line-height:1.16;margin:16px 0 0">Contact Us</h1>
@@ -1153,13 +1229,13 @@
     <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:80px 40px 40px">
       <div style="display:grid;grid-template-columns:1fr .82fr;gap:80px;align-items:start">
         <div>
-          <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:32px;font-weight:500;color:#121212;margin:0 0 8px">Make an enquiry</h2>
+          <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:32px;font-weight:500;color:#003531;margin:0 0 8px">Make an enquiry</h2>
           <p style="font-size:15.5px;line-height:1.75;color:#6B6B67;margin:0 0 32px">Tell us briefly about your matter and the right lawyer will respond. Nothing you send creates a solicitor-client relationship until we confirm engagement in writing.</p>
           <sc-if value="{{ sent }}">
             <div style="border:1px solid #B99824;padding:34px 32px;background:#F4F3EF">
-              <div style="font-family:'EB Garamond',Georgia,serif;font-size:26px;color:#121212">Thank you. Your enquiry has been sent.</div>
+              <div style="font-family:'EB Garamond',Georgia,serif;font-size:26px;color:#003531">Thank you. Your enquiry has been sent.</div>
               <div style="font-size:15px;line-height:1.75;color:#6B6B67;margin-top:10px">We aim to respond within one business day. For urgent matters, please call +603 3005 8027.</div>
-              <button type="button" sc-camel-on-click="{{ resetForm }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:6px 0;margin-top:20px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#121212">Send another enquiry</button>
+              <button type="button" sc-camel-on-click="{{ resetForm }}" style="background:none;border:0;border-bottom:1px solid #B99824;padding:6px 0;margin-top:20px;cursor:pointer;font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:#003531">Send another enquiry</button>
             </div>
           </sc-if>
           <sc-if value="{{ notSent }}" hint-placeholder-val="{{ true }}">
@@ -1172,28 +1248,28 @@
               <label style="display:block"><span style="font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#6B6B67">Phone</span><input type="tel" style="width:100%;margin-top:9px;border:0;border-bottom:1px solid #C9C7C1;background:none;padding:11px 0;font-size:16px;color:#161615;outline:none" style-focus="border-bottom:1px solid #B99824"></label>
               <label style="display:block"><span style="font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#6B6B67">Nature of matter</span>
                 <sc-raw-select style="width:100%;margin-top:9px;border:0;border-bottom:1px solid #C9C7C1;background:none;padding:11px 0;font-size:16px;color:#161615;outline:none">
-                  <option>Civil litigation &amp; dispute resolution</option>
-                  <option>Conveyancing &amp; real estate</option>
-                  <option>Family, probate &amp; trust</option>
-                  <option>Corporate &amp; advisory</option>
+                  <option>Civil Litigation &amp; Dispute Resolution</option>
+                  <option>Conveyancing &amp; Real Estate</option>
+                  <option>Family, Probate &amp; Trust</option>
+                  <option>Corporate &amp; Advisory</option>
                   <option>Foreclosure</option>
-                  <option>Criminal litigation</option>
-                  <option>Other legal services</option>
+                  <option>Criminal Litigation</option>
+                  <option>Other Legal Services</option>
                 </sc-raw-select>
               </label>
             </div>
             <label style="display:block"><span style="font-size:11.5px;letter-spacing:.14em;text-transform:uppercase;color:#6B6B67">How can we help?</span><textarea rows="5" ref="{{ refMsg }}" style="width:100%;margin-top:9px;border:1px solid #C9C7C1;background:none;padding:14px;font-size:16px;color:#161615;outline:none;resize:vertical" style-focus="border:1px solid #B99824"></textarea><sc-if value="{{ errMsg }}"><span style="display:block;margin-top:8px;font-size:12.5px;color:#8A2B1E">Please tell us briefly about your matter.</span></sc-if></label>
             <div style="display:flex;align-items:center;gap:18px;flex-wrap:wrap">
-              <button type="button" sc-camel-on-click="{{ submitForm }}" style="background:#121212;color:#fff;border:0;padding:17px 34px;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#B99824;color:#121212">Send enquiry</button>
-              <a href="https://wa.me/60330058027" target="_blank" rel="noopener" style="border:1px solid #C9C7C1;padding:16px 26px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#121212" style-hover="border-color:#8A6A14;color:#8A6A14">Chat on WhatsApp</a>
+              <button type="button" sc-camel-on-click="{{ submitForm }}" style="background:#003531;color:#fff;border:0;padding:17px 34px;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#B99824;color:#003531">Send enquiry</button>
+              <a href="https://wa.me/60330058027" target="_blank" rel="noopener" style="border:1px solid #C9C7C1;padding:16px 26px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#003531" style-hover="border-color:#8A6A14;color:#8A6A14">Chat on WhatsApp</a>
             </div>
           </div>
           </sc-if>
         </div>
         <div>
-          <div style="border-top:2px solid #121212;padding-top:22px">
+          <div style="border-top:2px solid #003531;padding-top:22px">
             <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Office</div>
-            <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;line-height:1.6;color:#121212;margin-top:14px">B-03-02, Sky Park @ One City USJ,<br>Jalan USJ 25/1B, One City,<br>47650 Subang Jaya,<br>Selangor Darul Ehsan, Malaysia.</div>
+            <div style="font-family:'EB Garamond',Georgia,serif;font-size:21px;line-height:1.6;color:#003531;margin-top:14px">B-03-02, Sky Park @ One City USJ,<br>Jalan USJ 25/1B, One City,<br>47650 Subang Jaya,<br>Selangor Darul Ehsan, Malaysia.</div>
             <div style="font-size:14.5px;line-height:1.7;color:#6B6B67;margin-top:14px">Third floor, accessible by direct lift access. It is preferable to fix an appointment before coming by.</div>
           </div>
           <div style="border-top:1px solid #E3E2DD;margin-top:28px;padding-top:22px;display:grid;grid-template-columns:1fr 1fr;gap:24px">
@@ -1213,62 +1289,40 @@
               <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Appointments</div>
               <div style="font-size:15.5px;color:#161615;margin-top:10px">By arrangement<br><span style="font-size:14px;color:#6B6B67">Call or email to fix a time</span></div>
             </div>
+            <div>
+              <div style="font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:#8A6A14">Follow Us</div>
+              <div style="font-size:15.5px;color:#161615;margin-top:10px;display:flex;flex-direction:column;gap:8px">
+                <a href="https://www.tiktok.com/@t.k.chambers" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px">{{ icons.tiktok }} @t.k.chambers</a>
+                <a href="https://www.instagram.com/tk_chambers/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:8px">{{ icons.instagram }} @tk_chambers</a>
+              </div>
+            </div>
           </div>
-          <a href="https://www.google.com/maps/search/?api=1&amp;query=Sky+Park+One+City+USJ+Jalan+USJ+25%2F1B+47650+Subang+Jaya" target="_blank" rel="noopener" style="display:block;margin-top:30px">
-            <div style="aspect-ratio:16/10;background:repeating-linear-gradient(135deg,#E6E4DF 0 10px,#EFEEEA 10px 20px);display:flex;align-items:flex-end;padding:18px"><span style="font-size:11.5px;color:#94948F">google map embed, sky park @ one city usj</span></div>
-            <div style="border:1px solid #E3E2DD;border-top:0;padding:14px 18px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#121212">Open in Google Maps →</div>
+          <a href="https://www.google.com/maps/search/?api=1&amp;query=Tan+%26+Khong+Chambers+Subang+Jaya" target="_blank" rel="noopener" style="display:block;margin-top:30px">
+            <iframe src="https://www.google.com/maps?q=Tan+%26+Khong+Chambers+Subang+Jaya&amp;output=embed" title="Map to Tan &amp; Khong Chambers" loading="lazy" referrerpolicy="no-referrer-when-downgrade" style="display:block;width:100%;aspect-ratio:16/10;border:0;pointer-events:none"></iframe>
+            <div style="border:1px solid #E3E2DD;border-top:0;padding:14px 18px;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase;color:#003531">Open in Google Maps<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></div>
           </a>
         </div>
       </div>
     </div>
     <sc-if value="{{ showFaq }}" hint-placeholder-val="{{ true }}">
-    <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:56px 40px 96px">
-      <div style="display:grid;grid-template-columns:.36fr .64fr;gap:72px;align-items:start">
+    <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:40px 40px 96px">
+      <div style="background:#F4F3EF;padding:34px 36px;display:flex;justify-content:space-between;align-items:center;gap:24px;flex-wrap:wrap">
         <div>
           <div style="font-size:12px;letter-spacing:.18em;text-transform:uppercase;color:#8A6A14">Before You Call</div>
-          <h2 style="font-family:'EB Garamond',Georgia,serif;font-size:36px;font-weight:500;line-height:1.15;color:#121212;margin:14px 0 0">Fees &amp; process</h2>
+          <div style="font-family:'EB Garamond',Georgia,serif;font-size:26px;color:#003531;margin-top:10px">Questions about fees or the process? See our FAQ.</div>
         </div>
-        <div>
-          <div style="border-top:1px solid #E3E2DD">
-            <button type="button" sc-camel-on-click="{{ faq.t0 }}" style="width:100%;text-align:left;background:none;border:0;padding:24px 0;cursor:pointer;display:flex;justify-content:space-between;gap:24px;align-items:baseline">
-              <span style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212">How are your fees structured?</span>
-              <span style="color:#8A6A14;font-size:18px">+</span>
-            </button>
-            <sc-if value="{{ faq.o0 }}"><div data-acc="" style="font-size:15.5px;line-height:1.8;color:#6B6B67;padding:0 0 26px;max-width:64ch">Transparency towards our fee structure is part of our client charter. Conveyancing and probate work is generally billed against the statutory scales, while litigation and advisory work is quoted by stage or on an hourly basis. You will receive a written scope and estimate before we begin.</div></sc-if>
-          </div>
-          <div style="border-top:1px solid #E3E2DD">
-            <button type="button" sc-camel-on-click="{{ faq.t1 }}" style="width:100%;text-align:left;background:none;border:0;padding:24px 0;cursor:pointer;display:flex;justify-content:space-between;gap:24px;align-items:baseline">
-              <span style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212">What happens at a first consultation?</span>
-              <span style="color:#8A6A14;font-size:18px">+</span>
-            </button>
-            <sc-if value="{{ faq.o1 }}"><div data-acc="" style="font-size:15.5px;line-height:1.8;color:#6B6B67;padding:0 0 26px;max-width:64ch">We will hear the background, identify the immediate deadlines, and give you frank and realistic legal advice on the options and likely cost. Bring any agreements, correspondence, notices or court papers you already have.</div></sc-if>
-          </div>
-          <div style="border-top:1px solid #E3E2DD">
-            <button type="button" sc-camel-on-click="{{ faq.t2 }}" style="width:100%;text-align:left;background:none;border:0;padding:24px 0;cursor:pointer;display:flex;justify-content:space-between;gap:24px;align-items:baseline">
-              <span style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212">Do I need an appointment to visit?</span>
-              <span style="color:#8A6A14;font-size:18px">+</span>
-            </button>
-            <sc-if value="{{ faq.o2 }}"><div data-acc="" style="font-size:15.5px;line-height:1.8;color:#6B6B67;padding:0 0 26px;max-width:64ch">It is preferable to fix an appointment before coming by, so that the lawyer handling your matter is in the office. Our office is on the third floor of Sky Park @ One City USJ with direct lift access.</div></sc-if>
-          </div>
-          <div style="border-top:1px solid #E3E2DD;border-bottom:1px solid #E3E2DD">
-            <button type="button" sc-camel-on-click="{{ faq.t3 }}" style="width:100%;text-align:left;background:none;border:0;padding:24px 0;cursor:pointer;display:flex;justify-content:space-between;gap:24px;align-items:baseline">
-              <span style="font-family:'EB Garamond',Georgia,serif;font-size:21px;color:#121212">How will I be kept updated?</span>
-              <span style="color:#8A6A14;font-size:18px">+</span>
-            </button>
-            <sc-if value="{{ faq.o3 }}"><div data-acc="" style="font-size:15.5px;line-height:1.8;color:#6B6B67;padding:0 0 26px;max-width:64ch">We commit to ensuring you are regularly updated as your matter progresses, with a named lawyer responsible for your file and copies of every material document sent to you as it is filed or received.</div></sc-if>
-          </div>
-        </div>
+        <button type="button" sc-camel-on-click="{{ nav.faq }}" style="background:#003531;color:#fff;border:0;padding:15px 26px;cursor:pointer;font-size:12.5px;letter-spacing:.1em;text-transform:uppercase" style-hover="background:#B99824;color:#003531">Read the FAQ<span style="font-size:24px;line-height:0;vertical-align:-3px;margin-left:6px;letter-spacing:0">→</span></button>
       </div>
     </div>
     </sc-if>
   </div>
   </sc-if>
 
-  <div style="background:#121212;color:#fff">
+  <div style="background:#003531;color:#fff">
     <div data-reveal="" style="max-width:1440px;margin:0 auto;padding:80px 40px 34px">
       <div style="display:grid;grid-template-columns:1.15fr .62fr .62fr .8fr;gap:44px">
         <div>
-          <img src="assets/images/logo-footer.png" alt="Tan &amp; Khong Chambers" style="height:40px;width:auto;display:block">
+          <img src="assets/images/logo-footer.png" alt="Tan &amp; Khong Chambers" style="height:54px;width:auto;display:block">
           <p style="font-family:'EB Garamond',Georgia,serif;font-style:italic;font-size:18px;line-height:1.6;color:rgba(255,255,255,.72);margin:24px 0 0;max-width:32ch">“Dedicated to provide quality legal services, tailored to your circumstances &amp; expectations”</p>
         </div>
         <div>
@@ -1277,6 +1331,8 @@
             <button type="button" sc-camel-on-click="{{ nav.about }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:14.5px;color:rgba(255,255,255,.82)" style-hover="color:#D4B457">About Us</button>
             <button type="button" sc-camel-on-click="{{ nav.vision }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:14.5px;color:rgba(255,255,255,.82)" style-hover="color:#D4B457">Our Vision</button>
             <button type="button" sc-camel-on-click="{{ nav.people }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:14.5px;color:rgba(255,255,255,.82)" style-hover="color:#D4B457">Our People</button>
+            <button type="button" sc-camel-on-click="{{ nav.feed }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:14.5px;color:rgba(255,255,255,.82)" style-hover="color:#D4B457">Our Feed</button>
+            <button type="button" sc-camel-on-click="{{ nav.faq }}" style="background:none;border:0;padding:0;cursor:pointer;font-size:14.5px;color:rgba(255,255,255,.82)" style-hover="color:#D4B457">FAQ</button>
           </div>
         </div>
         <div>
@@ -1293,6 +1349,11 @@
         <div>
           <div style="font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#D4B457">Contact</div>
           <div style="font-size:14.5px;line-height:1.85;color:rgba(255,255,255,.82);margin-top:18px">B-03-02, Sky Park @ One City USJ,<br>Jalan USJ 25/1B, One City,<br>47650 Subang Jaya, Selangor.<br><br>+603 3005 8027<br>admin@tkchambers.com<br><br><span style="color:#D4B457">Working hours</span><br>Monday to Friday, 9:00am to 6:00pm</div>
+          <div style="font-size:11.5px;letter-spacing:.16em;text-transform:uppercase;color:#D4B457;margin-top:26px">Follow Us</div>
+          <div style="display:flex;flex-direction:column;gap:10px;margin-top:14px">
+            <a href="https://www.tiktok.com/@t.k.chambers" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;font-size:14.5px;color:rgba(255,255,255,.82)" style-hover="color:#D4B457">{{ icons.tiktok }} TikTok: @t.k.chambers</a>
+            <a href="https://www.instagram.com/tk_chambers/" target="_blank" rel="noopener" style="display:inline-flex;align-items:center;gap:10px;font-size:14.5px;color:rgba(255,255,255,.82)" style-hover="color:#D4B457">{{ icons.instagram }} Instagram: @tk_chambers</a>
+          </div>
         </div>
       </div>
       <div style="border-top:1px solid rgba(255,255,255,.16);margin-top:56px;padding-top:24px;display:flex;justify-content:space-between;gap:24px;font-size:12.5px;color:rgba(255,255,255,.55)">
@@ -1305,6 +1366,54 @@
 </x-dc>
 <script type="text/x-dc" data-dc-script="" data-props="{&quot;showLangToggle&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Site options&quot;},&quot;showCredentials&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Site options&quot;},&quot;showFaq&quot;:{&quot;editor&quot;:&quot;boolean&quot;,&quot;default&quot;:true,&quot;tsType&quot;:&quot;boolean&quot;,&quot;section&quot;:&quot;Site options&quot;}}">
 class Component extends DCLogic {
+  // ===== OUR FEED =====
+  // Newest post first. To add a post, copy one block and change the text.
+  // "link" is optional: paste a URL to show a "Read more" link, or leave it as "".
+  posts = [
+    {
+      date: "November 2026",
+      tag: "Announcement",
+      title: "Welcome to our new website",
+      body: "Our new website is now live. This feed is where we will share firm notices, legal updates and articles. Follow us on TikTok and Instagram to stay up to date.",
+      link: ""
+    },
+    {
+      date: "October 2024",
+      tag: "Firm News",
+      title: "Merger with John Wong Associates",
+      body: "Tan & Khong Chambers merged with John Wong Associates, welcoming John Wong Yu Ling as a Partner. The firm now practises from Sky Park @ One City USJ, Subang Jaya.",
+      link: ""
+    },
+    {
+      date: "April 2019",
+      tag: "Firm News",
+      title: "Tan & Khong Chambers is founded",
+      body: "The firm was established at Sunway Geo Avenue by Mr. Khong, Mr. Daryl Tan and Mr. Nick Tan as founding partners.",
+      link: ""
+    }
+  ];
+
+  // ===== FAQ =====
+  // To add a question, copy one block and change the text.
+  faqs = [
+    {
+      q: "How are your fees structured?",
+      a: "Transparency towards our fee structure is part of our client charter. Conveyancing and probate work is generally billed against the statutory scales, while litigation and advisory work is quoted by stage or on an hourly basis. You will receive a written scope and estimate before we begin."
+    },
+    {
+      q: "What happens at a first consultation?",
+      a: "We will hear the background, identify the immediate deadlines, and give you frank and realistic legal advice on the options and likely cost. Bring any agreements, correspondence, notices or court papers you already have."
+    },
+    {
+      q: "Do I need an appointment to visit?",
+      a: "It is preferable to fix an appointment before coming by, so that the lawyer handling your matter is in the office. Our office is on the third floor of Sky Park @ One City USJ with direct lift access."
+    },
+    {
+      q: "How will I be kept updated?",
+      a: "We commit to ensuring you are regularly updated as your matter progresses, with a named lawyer responsible for your file and copies of every material document sent to you as it is filed or received."
+    }
+  ];
+
   state = { page: 'home', q: '', pa: 'civil', faq: -1, sent: false, menuOpen: false, err: {} };
   refName = React.createRef();
   refEmail = React.createRef();
@@ -1440,13 +1549,25 @@ class Component extends DCLogic {
       if (m) any = true;
     });
     const nav = {};
-    ['home','about','vision','areas','people','contact','civil','conveyancing','family','corporate','foreclosure','criminal','other','khong','john','esther','adibah']
+    ['home','about','vision','areas','people','feed','faq','contact','civil','conveyancing','family','corporate','foreclosure','criminal','other','khong','john','esther','nabila']
       .forEach(k => { nav[k] = () => this.go(k); });
-    const faq = {};
-    for (let i = 0; i < 4; i++) {
-      faq['t' + i] = () => this.setState(s => ({ faq: s.faq === i ? -1 : i }));
-      faq['o' + i] = this.state.faq === i;
-    }
+    const faqList = this.faqs.map((f, i) => ({
+      q: f.q,
+      a: f.a,
+      open: this.state.faq === i,
+      sign: this.state.faq === i ? '\u2013' : '+',
+      toggle: () => this.setState(s => ({ faq: s.faq === i ? -1 : i }))
+    }));
+    const E = React.createElement;
+    const icons = {
+      tiktok: E('svg', { width: 18, height: 18, viewBox: '0 0 24 24', fill: 'currentColor', 'aria-hidden': 'true' },
+        E('path', { d: 'M12.525.02c1.31-.02 2.61-.01 3.91-.02.08 1.53.63 3.09 1.75 4.17 1.12 1.11 2.7 1.62 4.24 1.79v4.03c-1.44-.05-2.89-.35-4.2-.97-.57-.26-1.1-.59-1.62-.93-.01 2.92.01 5.84-.02 8.75-.08 1.4-.54 2.79-1.35 3.94-1.31 1.92-3.58 3.17-5.91 3.21-1.43.08-2.86-.31-4.08-1.03-2.02-1.19-3.44-3.37-3.65-5.71-.02-.5-.03-1-.01-1.49.18-1.9 1.12-3.72 2.58-4.96 1.66-1.44 3.98-2.13 6.15-1.72.02 1.48-.04 2.96-.04 4.44-.99-.32-2.15-.23-3.02.37-.63.41-1.11 1.04-1.36 1.75-.21.51-.15 1.07-.14 1.61.24 1.64 1.82 3.02 3.5 2.87 1.12-.01 2.19-.66 2.77-1.61.19-.33.4-.67.41-1.06.1-1.79.06-3.57.07-5.36.01-4.03-.01-8.05.02-12.07z' })),
+      instagram: E('svg', { width: 18, height: 18, viewBox: '0 0 24 24', fill: 'none', stroke: 'currentColor', strokeWidth: 1.9, 'aria-hidden': 'true' },
+        E('rect', { x: 2.5, y: 2.5, width: 19, height: 19, rx: 5.5 }),
+        E('circle', { cx: 12, cy: 12, r: 4.3 }),
+        E('circle', { cx: 17.6, cy: 6.4, r: 1.1, fill: 'currentColor', stroke: 'none' }))
+    };
+    const posts = this.posts.map(post => ({ ...post, link: post.link || '' }));
     const paImgs = {
       civil: 'https://images.unsplash.com/photo-1589829545856-d10d557cf95f?w=1400&q=75&auto=format&fit=crop',
       conveyancing: 'https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1400&q=75&auto=format&fit=crop',
@@ -1464,7 +1585,7 @@ class Component extends DCLogic {
       pa['h_' + k] = () => { if (this.state.hov !== k) this.setState({ hov: k }); };
     });
     return {
-      nav, show, faq, pa,
+      nav, show, faqList, posts, icons, pa,
       paImage: React.createElement('img', {
         key: this.state.hov || this.state.pa || 'civil',
         src: paImgs[this.state.hov] || paImgs[this.state.pa] || paImgs.civil,
@@ -1505,6 +1626,8 @@ class Component extends DCLogic {
       isAreas: p === 'areas',
       isPeople: p === 'people',
       isContact: p === 'contact',
+      isFeed: p === 'feed',
+      isFaq: p === 'faq',
       isCivil: p === 'civil',
       isConveyancing: p === 'conveyancing',
       isFamily: p === 'family',
@@ -1515,7 +1638,7 @@ class Component extends DCLogic {
       isKhong: p === 'khong',
       isJohn: p === 'john',
       isEsther: p === 'esther',
-      isAdibah: p === 'adibah'
+      isNabila: p === 'nabila'
     };
   }
 }

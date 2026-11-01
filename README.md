@@ -18,6 +18,12 @@ The site lives at **tkchambers.com**.
 - **Phone, email, address:** these appear in several places, so search `index.html` for each one and update every match.
 - **Language buttons:** the BM and 中文 buttons at the top are placeholders. The site only has English text so far.
 
+## Posting to Our Feed / adding FAQs
+
+Near the bottom of `index.html`, look for `===== OUR FEED =====` and `===== FAQ =====`.
+Each post or question is one block in a list. Copy a block, paste it, and change the text.
+Put the newest post first.
+
 ## Preview on your computer
 
 ```bash

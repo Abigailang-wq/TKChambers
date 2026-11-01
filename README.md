@@ -16,7 +16,7 @@ The site lives at **tkchambers.com**.
 - **Change text:** search `index.html` for the words you want to change and edit them.
 - **Swap a photo:** replace the file in `assets/images/` with a new one of the same name, or change the `src="assets/images/..."` in `index.html`.
 - **Phone, email, address:** these appear in several places, so search `index.html` for each one and update every match.
-- **Translations:** the BM and 中文 versions are near the bottom of `index.html`, so update them when you change English text.
+- **Language buttons:** the BM and 中文 buttons at the top are placeholders. The site only has English text so far.
 
 ## Preview on your computer
 

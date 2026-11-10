@@ -327,6 +327,8 @@
     [data-site-root] [data-broad] > div:last-child > div { position: relative !important; top: auto !important; right: auto !important; left: auto !important; width: 100% !important; margin-right: 0 !important; aspect-ratio: 1 !important; height: auto !important; }
     [data-site-root] [data-pa-head] { padding: 56px 22px 30px !important; }
     [data-site-root] [data-scrollcue] { display: none !important; }
+    [data-site-root] [data-hero-img] { width: 100% !important; }
+    [data-site-root] [data-hero-shade] { background: linear-gradient(180deg,rgba(0,53,49,.78),rgba(0,38,35,.9)) !important; }
     [data-site-root] [data-pa-sticky] { position: relative !important; top: auto !important; height: 320px !important; min-height: 320px !important; }
     [data-site-root] h1 { font-size: 34px !important; max-width: none !important; }
     [data-site-root] h2 { font-size: 27px !important; }
@@ -401,8 +403,8 @@
   <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
   <div>
     <div style="position:relative;background:#003531;color:#fff;overflow:hidden;min-height:658px;display:flex;flex-direction:column;justify-content:center">
-      <img src="assets/images/hero-background.jpg" alt="" aria-hidden="true" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 35%;filter:grayscale(1) contrast(1.05) brightness(.62)">
-      <div style="position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,38,35,.72) 0%,rgba(0,38,35,.6) 45%,rgba(0,38,35,.82) 100%)"></div>
+      <img data-hero-img="" src="assets/images/team-formal-seated.jpg" alt="The team at Tan &amp; Khong Chambers" style="position:absolute;top:0;right:0;width:64%;height:100%;object-fit:cover;object-position:center 30%">
+      <div data-hero-shade="" style="position:absolute;inset:0;background:linear-gradient(90deg,#003531 0%,#003531 36%,rgba(0,53,49,.55) 52%,rgba(0,53,49,.05) 72%),linear-gradient(0deg,rgba(0,38,35,.92) 0%,rgba(0,38,35,0) 34%)"></div>
       <div data-reveal="" data-stagger="" style="position:relative;max-width:1440px;margin:auto auto;padding:44px 40px 34px;width:100%;text-align:left">
         <div style="font-size:12.5px;letter-spacing:.2em;text-transform:uppercase;color:#D4B457">Tan &amp; Khong Chambers</div>
         <h1 style="font-family:'EB Garamond',Georgia,serif;font-size:48px;font-weight:500;line-height:1.22;letter-spacing:-.01em;margin:22px 0 0;padding-bottom:6px;color:#fff;max-width:22ch;text-wrap:pretty">Quality legal services,<br><em style="font-style:italic;color:#EBD79A">tailored to your needs.</em></h1>
@@ -448,10 +450,10 @@
         </div>
         <div style="grid-column:8/-1;grid-row:1;position:relative;z-index:1;margin-right:min(-40px, calc((1440px - 100vw)/2 - 40px));display:flex;flex-direction:column;align-items:flex-end">
           <div style="width:60%;aspect-ratio:1;overflow:hidden">
-            <img src="assets/images/lawyers-with-client.jpg" alt="Lawyers reviewing a document with a client" style="width:100%;height:100%;object-fit:cover;object-position:center">
+            <img src="assets/images/home-team-left.jpg" alt="Members of the Tan &amp; Khong Chambers team" style="width:100%;height:100%;object-fit:cover;object-position:center">
           </div>
           <div style="width:60%;aspect-ratio:1;margin-right:40%;overflow:hidden">
-            <img src="assets/images/consultation.jpg" alt="Consultation in progress" style="width:100%;height:100%;object-fit:cover;object-position:center">
+            <img src="assets/images/home-team-right.jpg" alt="Members of the Tan &amp; Khong Chambers team" style="width:100%;height:100%;object-fit:cover;object-position:center">
           </div>
         </div>
       </div>

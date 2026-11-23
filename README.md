@@ -31,3 +31,7 @@ python3 -m http.server 8000
 ```
 
 Then open http://localhost:8000. Opening `index.html` by double-clicking may not work, so use the command above.
+
+## Deploying
+
+The site is deployed on Vercel, connected to this repository. Every push to `main` goes live automatically about a minute later. No build step is needed (Framework Preset: Other).
